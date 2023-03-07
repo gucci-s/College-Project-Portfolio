@@ -1,0 +1,30 @@
+#creating a trip planner aoo
+
+#create a function with name parameter
+def trip_planner_welcome(name):
+  print("Welcome to tripplanner v1.0", name)
+
+#calling function with the argument of my name
+trip_planner_welcome("Sarah")
+
+#creating another function to estimate time with one parameter of estimated_time
+#creating variable rounded_time using Python round() function
+#returning the new defined variable
+def estimated_time_rounded(estimated_time):
+  rounded_time = round(estimated_time)
+  return rounded_time
+
+#calling function and savinf result in a varible called estimate
+estimate = estimated_time_rounded(2.43)
+
+#creating function with 4 parameters and cooresponding print statements
+def destination_setup(origin, destination, estimated_time, mode_of_transport="Car"):
+  print("Your trip starts off in", origin)
+  print("And you are traveling to", destination)
+  print("You will be traveling by", mode_of_transport)
+  print("It will take approximately", str(estimated_time), "hours")
+
+#calling function with desired arguments
+#using "plane" overrides defualt value of "car"
+destination_setup("Chicago", "Nashville", estimate, "Plane")
+ 
